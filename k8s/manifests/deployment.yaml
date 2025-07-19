@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: helm-node-app
+  labels:
+    app: helm-node-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: helm-node-app
+  template:
+    metadata:
+      labels:
+        app: helm-node-app
+    spec:
+      containers:
+        - name: helm-node-app
+          image: caderrimas/helm-node-app:v1
+          ports:
+            - containerPort: 3001
+      imagePullSecrets:
+        - name: helm-node-image-secret

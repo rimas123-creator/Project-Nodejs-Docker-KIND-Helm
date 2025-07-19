@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  helm-node-app:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-07-19T16:32:39.102849+05:30"
+    description: A Helm chart for Kubernetes
+    digest: fddb1a370675b0b6db3a0d29e356188ec905940bc5566351c67e70ea29fc98fd
+    name: helm-node-app
+    type: application
+    urls:
+    - helm-node-app-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-07-19T16:32:39.102255+05:30"
